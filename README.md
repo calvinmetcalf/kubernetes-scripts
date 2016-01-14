@@ -2,7 +2,7 @@
 
 a set of kubernetes scripts I have in some of my projects for doing rolling updates and whatnot
 
-Assumes that you update the version in your package.json each time you deploy.
+Assumes that you update the version in your package.json each time you deploy.  The package name in your package.json should be unique per project as it is used to uniquly identify the app.
 
 
 needs to be called with the following env variables
