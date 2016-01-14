@@ -13,7 +13,7 @@ var pod = {
   spec: {
     replicas: 4, // <---- you probably want to update this
     selector: {
-      name: appName
+      name: appName,
       version: version
     },
     template: {
@@ -47,7 +47,7 @@ var pod = {
   }
 }
 var envs = [
-  'DEBUG', 'NODE_ENV'
+  'DEBUG', 'NODE_ENV'  // <---- you probably want to update this
 ];
 envs.forEach(function (envar) {
   if (process.env[envar]) {
